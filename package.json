@@ -1,0 +1,28 @@
+{
+  "name": "using-mongodb",
+  "version": "1.0.0",
+  "description": "Using MongoDB to store application data",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "handlebars views/partials/photoCard.handlebars -f public/photoCardTemplate.js",
+    "start": "node server.js",
+    "prestart": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OSU-CS290-F17/using-mongodb.git"
+  },
+  "author": "Hess",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OSU-CS290-F17/using-mongodb/issues"
+  },
+  "homepage": "https://github.com/OSU-CS290-F17/using-mongodb#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.11"
+  }
+}
